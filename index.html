@@ -14,6 +14,9 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        maxWidth: {
+                            '1920px': '1920px',
+                        }
                     }
                 }
             }
@@ -23,20 +26,22 @@
 
 <body>
     <!-- header section start -->
-    <header class="md:flex justify-between px-8 py-8 md:px-28 md:py-16">
+    <header class="md:flex justify-between px-8 py-8 md:px-28 md:py-16 max-w-1920px">
         <div>
-            <h1 class="text-4xl md:text-7xl font-bold text-[#1C1C1C]">It,s good <br>
+            <h1 class="text-4xl md:text-7xl 2xl:text-9xl 2xl:font-semibold font-bold text-[#1C1C1C]">It,s good <br>
                 tea time at The <br>
                 Tea House</h1>
 
-            <p class="font-medium text-base	 md:w-96 mt-12 text-[#777777]">Tea and Botanical Solutions Supplier Give
+            <p class="font-medium text-base	 md:w-96 mt-12 2xl:text-lg text-[#777777]">Tea and Botanical Solutions
+                Supplier Give
                 Optimum
                 Satisfaction To Your Taste Buds.</p>
-            <button class="mt-8 font-bold text-m bg-gradient-to-r from-orange-400 to-red-500 text-white
-            px-3 py-3 rounded-lg">Explore More<i class="fa-solid fa-arrow-right mx-2 -rotate-45"></i></i>
+            <button class="mt-8 font-bold text-lg 2xl:text-2xl bg-gradient-to-r from-orange-400 to-red-500 text-white
+            px-3 py-3 2xl:px-6 2xl:py-4 rounded-lg">Explore More<i
+                    class="fa-solid fa-arrow-right mx-2 -rotate-45"></i></i>
             </button>
         </div>
-        <div class="relative mt-8">
+        <div class="relative mt-8 md:mt-0 2xl:mt-24">
             <div>
                 <img src="images/banner.png" alt="">
             </div>
@@ -55,17 +60,18 @@
     <!-- main content start -->
     <main class="mx-8 mt-8 md:mt-28 md:mx-32">
         <!-- featured products section start -->
-        <section>
+        <section class="container">
             <div class="md:text-center">
                 <h1 class="text-xl md:text-5xl font-extrabold text-[#1C1C1C]">Our Featured Products</h1>
-                <p class="mx-auto mt-7 text-base font-medium text-[#777777] md:w-9/12">There are many variations of passages of Lorem
+                <p class="mx-auto mt-7 text-base font-medium text-[#777777] md:w-9/12">There are many variations of
+                    passages of Lorem
                     Ipsum
                     available, but the majority have suffered alteration in some form, by injected humour, or randomised
                     words which don't look even slightly believable. </p>
             </div>
-            <div class="grid md:grid-cols-4 mt-20 gap-5">
+            <div class="grid md:grid-cols-4 gap-6 mt-20">
                 <div
-                    class="w-60 md:w-64 md:h-96 bg-gray-100 text-center bg-gradient-to-b from-gray-200 to-gray-50 rounded-xl py-8 shadow-lg shadow-gray-500/50 mx-auto">
+                    class="w-60 md:w-64 2xl:w-auto md:h-96 2xl:h-[410px] bg-gray-100 text-center bg-gradient-to-b from-gray-200 to-gray-50 rounded-xl py-8 2xl:py-12 shadow-lg shadow-gray-500/50 mx-auto">
                     <img src="images/tea-1.png" alt="image" class="mx-auto">
                     <div class="px-7 py-5">
                         <h3 class="text-2xl font-extrabold mt-2">Green Tea</h3>
@@ -73,7 +79,7 @@
                     </div>
                 </div>
                 <div
-                    class="mx-auto w-60 md:w-64 h-96 bg-gray-100 text-center bg-gradient-to-b from-gray-200 to-gray-50 rounded-xl py-8 shadow-lg shadow-gray-500/50">
+                    class="mx-auto w-60 2xl:w-auto md:w-64 h-96 2xl:h-[410px] bg-gray-100 text-center bg-gradient-to-b from-gray-200 to-gray-50 rounded-xl py-8 2xl:py-12 shadow-lg shadow-gray-500/50">
                     <img src="images/tea-2.png" alt="image" class="mx-auto">
                     <div class="px-7 py-5">
                         <h3 class="text-2xl font-extrabold mt-2">Milk Tea</h3>
@@ -81,7 +87,7 @@
                     </div>
                 </div>
                 <div
-                    class="mx-auto w-60 md:w-64 h-96 bg-gray-100 text-center bg-gradient-to-b from-gray-200 to-gray-50 rounded-xl py-8 shadow-lg shadow-gray-500/50">
+                    class="mx-auto w-60 md:w-64 2xl:w-auto h-96 2xl:h-[410px] bg-gray-100 text-center bg-gradient-to-b from-gray-200 to-gray-50 rounded-xl py-8 2xl:py-12  shadow-lg shadow-gray-500/50">
                     <img src="images/tea-3.png" alt="image" class="mx-auto">
                     <div class="px-7 py-5">
                         <h3 class="text-2xl font-extrabold mt-2">Black Tea</h3>
@@ -89,17 +95,41 @@
                     </div>
                 </div>
                 <div
-                    class="mx-auto w-60 md:w-64 h-96 bg-gray-100 text-center bg-gradient-to-b from-gray-200 to-gray-50 rounded-xl py-8 shadow-lg shadow-gray-500/50">
+                    class="mx-auto w-60 md:w-64 2xl:w-auto 2xl:h-[410px] h-96 bg-gray-100 text-center bg-gradient-to-b from-gray-200 to-gray-50 rounded-xl py-8 2xl:py-12  shadow-lg shadow-gray-500/50">
                     <img src="images/tea-4.png" alt="image" class="mx-auto">
                     <div class="px-7 py-5">
                         <h3 class="text-2xl font-extrabold mt-2">Lemon Tea</h3>
                         <p class="mt-2 text-base">Creamer could be replaced by fresh milk</p>
                     </div>
                 </div>
-               
+
             </div>
         </section>
         <!-- featured products section end -->
+
+
+        <!-- freshly present section start -->
+        <section class="md:flex mb-32 mt-24 md:mt-32 container h-auto">
+            <div class="border border-red-300 w-full md:w-1/2 grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 bg-gradient-to-r from-red-200 to-orange-50 rounded-lg"></div>
+                <div class="border border-green-700 grid row-span-2 rounded-lg items-center justify-center">
+                    <img src="images/fresh-1.png" alt="image">
+                </div>
+                <div class="border border-pink-500 grid row-span-2 rounded-lg items-center justify-center">
+                    <img src="images/fresh-2.png" alt="image">
+                </div>
+                <div class="border border-red-900 grid grid-cols-1 bg-gradient-to-r from-red-500 to-orange-500 rounded-lg"></div>
+            </div>
+            <div class="border border-red-900 w-full md:w-1/2 md:pl-12">
+                <h1 class="text-2xl md:text-5xl 2xl:text-6xl font-extrabold text-[#1C1C1C]">Great Tea, Freshly <br> Presented</h1>
+                <p class="mt-7 text-[#777777] 2xl:text-lg font-medium">The meaning of gong cha is chaines is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its customers  because of good words of mouth and unique customized service organized from Taiwan.</p>
+                <h3 class="mt-7 text-[#1C1C1C] font-extrabold text-xl	">Unique Taste</h3>
+                <p class="mt-7 text-[#777777] 2xl:text-lg font-medium">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+                <h3 class="mt-7 text-[#1C1C1C] font-extrabold text-xl	">Premium Quality</h3>
+                <p class="mt-7 text-[#777777] 2xl:text-lg font-medium">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+            </div>
+        </section>
+        <!-- freshly present section end -->
         <!-- main content end  -->
     </main>
 </body>
